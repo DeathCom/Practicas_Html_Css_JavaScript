@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 02 Eventos</title>
+	<script type="text/javascript">
+		function pulsa(){alert("autor: Carlos P.");}
+		function foco(){alert("Foco en la primera caja");}
+		function tecla(){alert("Tecla Pulsada");}
+	</script>
+</head>
+<body>
+	<input type="button" name="button" value="Autor" onclick=pulsa();>
+	<input type="text" name="text" size="5" onfocus=foco();>
+	<input type="text" name="text2" size="5" onkeypress=tecla();>
+</body>
+</html>

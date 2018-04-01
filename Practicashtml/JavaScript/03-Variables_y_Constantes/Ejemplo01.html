@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 01 Variables y Constantes</title>
+	<script type="text/javascript">
+		var global = 100;
+		function uno(){
+			var local_uno=1;
+			alert("Global "+global+" Local "+local_uno);
+			dos();
+		}
+		function dos(){
+			var local_dos=2;
+			alert("Global "+global+" Local "+local_dos);
+		}
+	</script>
+</head>
+<body onload=uno();>
+	<!--
+		Sintaxis:
+		var nombre_variable;
+		var nombre_variable=[valor];
+
+		Tipo		Valores
+		numerica	Cualquier tipo numerico.
+		boolean		True o False.
+		String		Texto o letra.
+	-->
+
+	<!--
+		Tipo de Conversion				Sintaxis
+		De String a int 				var_numerica = parseInt(var_texto);
+		De String a coma flotante		var_numerica=parseFloat(var_texto);
+		De numero a Texto 				es automatica.
+	-->
+
+</body>
+</html>

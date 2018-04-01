@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 01 de Paso de parametros a Funciones</title>
+	<script type="text/javascript">
+		function opt(valor){
+			if(valor==1){
+				alert("Vas a ir a Uno");
+			}else{
+				alert("Vas a ir a Dos");
+			}
+		}
+	</script>
+</head>
+<body>
+	<a href="#" onmouseover=opt(1);>Ir a Uno</a><br><br>	
+	<a href="#" onmouseover=opt(2);>Ir a Dos</a>	
+
+	<!--
+		Sintaxis de la llamada:
+		<elemento evento=nombreFuncion(var1, var2,varN);>
+
+		Sintaxis del desarrollo:
+		function nombreFuncion(parametro1, parametro2,parametroN){
+			Sentencia(s);
+		}
+	-->
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 2: Llamar a la funcion desde otra.</title>
+	<script type="text/javascript">
+		function hola(){
+			alert("Hola a todos");
+			reHola();
+		}
+		function reHola(){
+			alert("Hola a todos de nuevo!");
+		}
+	</script>
+</head>
+<body onload=hola();>
+	<!--con esto hacemos que la funcion se ejecute al cargar el body-->
+
+</body>
+</html>

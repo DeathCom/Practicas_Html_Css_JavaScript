@@ -1,0 +1,64 @@
+<!--
+	While: 
+	[Inicializacion;]
+	while(condicion [es]){
+		cuerpo;
+		[iteracion]
+	}
+
+	do-While:
+	[Inicializacion;]
+	do{
+		cuerpo;
+		[iteracion;]
+	}while(condicion);
+
+	for(inicio; condicional_fin; iteracion){
+		sentencia(s);
+	}
+
+	continue: indica que aunque ocurra algo dentro del bucle el bucle continua con normalidadd;
+	break: indica que donde este colocado break dentro del bucle este debe pararse inmediatamente;
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 01 Cliclos</title>
+	<script type="text/javascript">
+		
+		function opt() {
+			var valor=1;
+			while(valor<=10){
+				alert("Esto Sale 10 veces: "+valor);
+				valor++;
+			}
+		}
+
+		function bucle(){
+			var cont=1;
+			while(cont<=10){
+				alert(cont);
+				cont++;
+				if(cont==5){
+					continue;
+				}
+			}
+		}
+
+		function bucle2() {
+			var cont=1;
+			while(cont<=10){
+				alert(cont);
+				cont++;
+				if(cont==5){
+					break;
+				}
+			}
+		}
+	</script>
+</head>
+<body onload=bucle();>
+	<a href="#"  onmouseover=opt();>Ir a Uno</a><br>
+	<a href="#"  onmouseover=bucle2();>Ir a dos</a>
+</body>
+</html>

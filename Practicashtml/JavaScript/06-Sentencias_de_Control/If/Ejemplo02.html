@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 02 Sentencias de Control (if)</title>
+	<script type="text/javascript">
+		function ver() {
+			var edad=parseint(cedad.value);
+			if(edad<=18){
+				alert("Abono Joven");
+			}else{
+				if(edad>=65){
+					alert("Abono 3era edad");
+				}else{
+					alert("Abono normal");
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	edad:
+	<input type="text" name="cedad" size="15" onblur=ver();>
+</body>
+</html>

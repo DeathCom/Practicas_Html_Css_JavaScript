@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 01 de Bucles</title>
+	<script type="text/javascript">
+		function confirmar(){
+			var respuesta=confirm("Pulse un boton: ");
+			if(respuesta==true){
+				alert("Has pulsado Aceptar");
+			}else{
+				alert("Has pulsado Cancelar");
+			}
+		}
+	</script>
+</head>
+<body onload=confirmar();>
+	<!--
+		uso de la ventana confirm
+		Se usa para mensajes booleanos de true o false.
+		Boton pulsado		valor de retorno
+		Aceptar				true
+		Cancelar			false
+	-->
+</body>
+</html>

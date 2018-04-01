@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 01 de Controles</title>
+	<script type="text/javascript">
+		var banco=100;
+		var numSecreto=0;
+
+		function generar() {
+			numSecreto=Math.random()*3; //Usamos Math.random() para generar numero aleatorio
+			numSecreto=Math.round(numSecreto); //Usamos Math.round() para redondear un numero
+			if (numSecreto==0) {
+				numSecreto=3;
+			}
+		}
+
+		function juego(valor) {
+			if (numSecreto==valor) {
+				alert("En hora Buena");
+				banco+=100;
+				generar();
+			} else {
+				banco-=50;
+			}
+			caja.value=banco;
+		}
+	</script>
+</head>
+<body onload=generar();>
+	<!--
+		Control 								Modo de empleo
+		Radio Botones (radio)					Igual que un boton de comando
+		Casilla de verificacion(checkbox)		Igual que noton de comando o radio boton
+		Caja de contrasena(passWord)			Igual que una caja de texto
+		Caja de texto multiLinea(area)			Igual que caja de texto o caja de contrasena
+		lista y listasa desplegables(select)	Costruir el elemento como siempre anadiendo en la 
+												etiqueta <select> el wlwmwnto change. y que cada etiqueta <option> anadir el atributo value para poder identifica cual de los elementos ha sido elegido.
+	-->
+	Apuesta:<br>
+	1.<input type="radio" name="R1" onclick=juego(1);><br>
+	2.<input type="radio" name="R1" onclick=juego(2);><br>
+	3.<input type="radio" name="R1" onclick=juego(3);><br><br>
+	banco:<br>
+	<input type="text" name="caja" size="20" value="100">
+</body>
+</html>

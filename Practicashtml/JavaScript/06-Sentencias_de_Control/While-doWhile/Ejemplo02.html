@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 02 de Bucles</title>
+	<script type="text/javascript">
+		function salida(){
+			var cont;
+			var paso=1;
+			var res;
+
+			for(cont=1;cont<=50;cont++){
+				alert("Paso "+cont);
+				if(paso==10){
+					paso=0;
+					res=confirm("Desea Segir?...");
+					if(res==false){
+						break;
+					}
+				}
+				paso++;
+			}
+		}
+	</script>
+</head>
+<body onload=salida();>
+
+</body>
+</html>

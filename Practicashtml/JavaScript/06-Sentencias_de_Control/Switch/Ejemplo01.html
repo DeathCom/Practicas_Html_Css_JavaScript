@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 01 Sentencias de Control (Switch)</title>
+	<script type="text/javascript">
+		function espe(){
+			var tipo=cespe.value;
+			swich(tipo){
+				case "humano":
+					alert("Eres un Humano");
+					break;
+				case "planta":
+					alert("Eres un vegetal");
+					break;
+				case "animal":
+					alert("Eres un animal");
+					break;
+				default:
+					alert("Especie desconocida");
+					break;
+			}
+		}
+	</script>
+</head>
+<body>
+	Especie:
+	<input type="text" name="cespe" size="20" onblur="espe();">
+</body>
+</html>
