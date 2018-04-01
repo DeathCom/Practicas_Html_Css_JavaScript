@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 03 de Controles</title>
+	<script type="text/javascript">
+		function viaje() {
+			var valor=destino.value;
+			var cadena;
+
+			switch(valor){
+				case "1":
+					cadena="Quito. Precio: 27.900";
+					break;
+				case "2":
+					cadena="Moscu. Precio: 17.000";
+					break;
+				case "3":
+					cadena="Paris. Precio: 57.900";
+					break;
+				case "4":
+					cadena="Roma. Precio: 17.900";
+					break;
+			}
+			alert(cadena);
+		}
+	</script>
+</head>
+<body>
+	<select size="1" name="destino" onChange=viaje();>
+		<option value="1">Quito</option>
+		<option value="2">Moscu</option>
+		<option value="3">Paris</option>
+		<option value="4">Roma</option>
+	</select>
+</body>
+</html>

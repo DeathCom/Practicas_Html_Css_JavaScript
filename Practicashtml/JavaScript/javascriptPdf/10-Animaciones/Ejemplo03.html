@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 03 de animaciones</title>
+	<script type="text/javascript">
+		function pasa(valor) {
+			if (valor==1) {
+				img.src="ten1.gif";
+			} else {
+				img.src="ten2.gif";
+			}
+		}
+	</script>
+</head>
+<body>
+	<img src="ten2.gif" name="img" onmouseover=pasa(1); onmouseout=pasa(2);>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 04 de animaciones</title>
+	<script type="text/javascript">
+		var estado=true;
+		setTimeout("cambio()",500);
+
+		function cambio() {
+			estado=!estado;
+			if(estado==true){
+				img.src="tenistal.gif";
+			}else{
+				img.src="tenista2.gif";
+			}
+			setTimeout("cambio()",500);
+		}
+	</script>
+</head>
+<body>
+	<img src="tenistal.gif" name="img">
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 02 de Controles</title>
+	<script type="text/javascript">
+		function pasa() {
+			var temporal;
+			temporal=secre.value;
+			caja.value=temporal;
+		}
+	</script>
+</head>
+<body>
+	Contrasena:<br>
+	<input type="password" name="secre" size="20" onKeyUp=pasa();><br><br>
+	Normal:<br>
+	<input type="text" name="caja" size="20">
+</body>
+</html>

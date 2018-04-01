@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 01 de animaciones</title>
+	<script type="text/javascript">
+		var horizontal=12;
+		setTimeout("mueve()", 500);
+
+		function mueve() {
+			horizontal+=10;
+			Texto1.style.left=horizontal;
+			if (horizontal>=200) {
+				horizontal=12;
+				setTimeout("mueve()", 500);
+			}
+		}
+	</script>
+</head>
+<body>
+	<!--
+		Estilos
+		Sintaxis											Descripcion
+		style="Psition:absolute,top:pos,left:pos 			posibilita el cambio de posicion;
+		style="color:nombreColor"							posibilita el cambio de color;
+		style="visibility:hidden o visible"					posibilita ocultar o mostrar
+	-->
+	<!--
+		Sintaxis:
+		nombreEtiqueta.style.estilo=valor;
+		nombreEtiqueta.atributo=valor;
+	-->
+	<!--
+		Para lanzar una animacion en determinado tiempo se debe usar el metodo setTimeout();
+		Sintaxis:
+		setTimeout("nombreFuncion()", intervalo[en milisegundos]);
+	-->
+	<p id="Texto1" style="position:absolute; top:16; left:12">Texto</p>
+</body>
+</html>
