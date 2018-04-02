@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 06 de animaciones</title>
+	<script type="text/javascript">
+		function cambio(valor){
+			if(valor=="imagen1"){
+				img.src="img/1.png";
+			}else{
+				img.src="img/2.png";
+			}
+		}
+	</script>
+</head>
+<body>
+	<select size="3" name="lista" onchange=cambio(value);>
+		<option value="imagen1">Imagen1</option>
+		<option value="imagen2">Imagen2</option>
+	</select>
+	<br>
+	<img src="img/1.png" name="img">
+</body>
+</html>

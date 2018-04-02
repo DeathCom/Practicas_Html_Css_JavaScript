@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos Predefinidos Emeplo 01</title>
+	<script type="text/javascript">
+		var v1;
+		function abre() {
+			v1=window.open("ab.html","v","status=yes","resizable=yes");
+			v1.status="Ventana creada para publicidad";
+			status="Ventana estandar del navegador"
+		}
+
+		function cierra() {
+			v1.close();
+		}
+	</script>
+</head>
+<body onload=abre();>
+	<input type="button" value="Cerrar" onclick=cierra();>
+</body>
+</html>

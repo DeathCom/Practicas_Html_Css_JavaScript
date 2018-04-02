@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos Predefinidos Sintaxis</title>
+</head>
+<body>
+	<!--
+		Window
+		Metodo				Descripcion						Sintaxis
+		open				Abrir ventanas					var=window.open("url","name","atrbs");
+		close				Cerrar ventanas					var.close();
+		opener				Indica si se abrio				varBoolean= si devuelve true var.opener
+		closed				Indica si se cerro 				varBoolean= si devuelve false var.closed
+		location			Enlaza con una pagina			var.Location="url";
+		print				Imprime el documento			var.Print();
+		alert				Abre ventanas alert				var.alert(datos);
+		confirm				Abre ventana de confirmacion	var.confirm(datos);
+		prompt				Abre ventana de prompt			var.prompt(datos,"valor inicial");
+		status				Texto de barra de estado		var.status="mensaje";
+		showModalDialog		Crea una ventana modal 			var=window.showModalDialog("url",atrbs);
+	-->
+	<!--
+		Atributos de showModalDialog(atrbs)
+		Atributos 				Elemento
+		dialogWidth:valor		define el ancho
+		dialogHeight:valor		define el alto
+		dialogTop:valor			define la posicion superior
+		dialogLeft:valor		define la posicion inerior
+	-->
+	<!--
+		Atributos de Open(atrbs)
+		Atributos 				Elemento
+		toolbar=[yes | no]		barra de herramientas
+		location=[yes | no]		barra de direcciones
+		directories=[yes | no]	historico
+		channelmode=[yes | no]	barra de canales
+		menubar=[yes | no]		barra de menu
+		status=[yes | no]		barra de estado
+		scrollbars=[yes | no]	barras de scroll
+		resizable=[yes | no]	dimensionable
+		width=pixels			ancho de la ventana
+		heigth=pixels			alto de la ventana
+		fullscreen=[yes | no]	maximizada
+		top=pixels				posicion superior
+		left=pixels				posicion izquierda
+	-->
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 08 de animaciones</title>
+	<script type="text/javascript">
+		var dibujo=new Image;
+		dibujo.src="img/2.png";
+
+		var vertical=35;
+		var ida=true;
+		var estado=true;
+		setTimeout("mover()",200);
+
+		function mover() {
+			estado=!estado;
+			if(estado==true){
+				img.src="img/1.png";
+			}else{
+				img.src="img/2.png";
+			}
+
+			if (vertical<=200 && ida==true) {
+				vertical+=10;
+			} else {
+				vertical-=10;
+				ida=false;
+				if(vertical<=35){
+					ida=true;
+				}
+			}
+			img.style.top=vertical;
+			setTimeout("mover()",200);
+		}
+	</script>
+</head>
+<body>
+	<img src="img/2.png" name="img" style="position:absolute; left:12; top:35">
+</body>
+</html>

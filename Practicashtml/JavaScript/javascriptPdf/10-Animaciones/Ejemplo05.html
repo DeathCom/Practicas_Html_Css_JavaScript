@@ -2,8 +2,25 @@
 <html>
 <head>
 	<title>Ejemplo 05 de animaciones</title>
+	<script type="text/javascript">
+		function imag(valor) {
+			if(valor=1){
+				img.src="img/1.png";
+			}else{
+				img.src="img/2.png";
+			}
+		}
+	</script>
 </head>
 <body>
-
+	<table border="1" width="15%">
+		<tr>
+			<td width="100%"><p onmouseover=imag(1);>Imagen1</td>
+		</tr>
+		<tr>
+			<td width="100%"><p onmouseover=imag(2);>Imagen2</td>
+		</tr>
+	</table><br>
+	<img src="img/1.png" name="img">
 </body>
 </html>

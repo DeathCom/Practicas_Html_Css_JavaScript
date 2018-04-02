@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 01 Uso de document para objetos predefinidos</title>
+	<script type="text/javascript">
+		function fondo(colores) {
+			document.bgColor=colores;
+		}
+		function texto(colores) {
+			document.fgColor=colores;
+		}
+	</script>
+</head>
+<body>
+	Color de Fondo <br>
+	Blanco 	<input type="radio" name="f" onclick=fondo("white");><br>
+	Rojo	<input type="radio" name="f" onclick=fondo("red");><br>
+	Azul	<input type="radio" name="f" onclick=fondo("blue");><br>
+	Color de Texto <br>
+	Negro	<input type="radio" name="t" onclick=texto("black");><br>
+	Gris	<input type="radio" name="t" onclick=texto("gray");><br>
+	Verde	<input type="radio" name="t" onclick=texto("green");><br>
+</body>
+</html>
