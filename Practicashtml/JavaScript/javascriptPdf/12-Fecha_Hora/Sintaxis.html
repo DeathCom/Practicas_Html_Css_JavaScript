@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sintaxis para Fechas y Horas</title>
+	<script type="text/javascript">
+		function fecha(){
+			var objFecha=new Date();
+			var completo=objFecha.toGMTString();
+
+			var hora=objFecha.getHours();
+			var minuto=objFecha.getMinutes();
+			var segundos=objFecha.getSeconds();
+
+			var dia=objFecha.getDate();
+			var mes=objFecha.getMonth();
+			var agno=objFecha.getYear();
+
+			alert(hora+" : "+minuto+" : "+segundos);
+			alert(dia+" / "+mes+" / "+agno);
+			alert(completo);
+		}
+	</script>
+</head>
+<body onload=fecha();>
+	<!--
+		Sintaxis : var nombreObjeto=new Date(); 
+		Metodo			
+		objeto.toGMTString();
+		objeto.getDate();			objeto.setDate(dato);
+		objeto.getMonth()+1;		objeto.setMonth(dato)+1;	
+		objeto.getYear();			objeto.setYear(dato);
+		objeto.getHours();			objeto.setHours(dato);
+		objeto.getMinutes();		objeto.setMinutes(dato);		
+		objeto.getSeconds();		objeto.setSeconds(dato);
+	-->
+</body>
+</html>

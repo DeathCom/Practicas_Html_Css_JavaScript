@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos Predefinidos Sintaxis para evento Screen</title>
+	<script type="text/javascript">
+		function resol() {
+			var ancho=screen.width;
+			var alto=screen.height;
+
+			if (ancho<1800 && alto<1600) {
+				alert("Aumentar Resolucion a 1800x1600");
+				document.write("Aumente la Resolucion");
+			}
+		}
+	</script>
+</head>
+<body onload=resol();>
+	<!--
+		Metodo		Descripcion					Sintaxis
+		height		altura de la pantalla		var=screen.height
+		width		ancho de la pantalla		var=screen.width
+		colorDepth	bits por pixel para 		var=screen.colorDepth
+					colores de la pantalla
+	-->
+</body>
+</html>

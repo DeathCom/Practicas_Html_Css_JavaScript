@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 01 para Metodos String</title>
+	<script type="text/javascript">
+		function pasa(){
+			var contra=T.value;
+			var nletras=contra.length;
+			if (nletras<4) {
+				alert("Minimo 4 letras");
+				T.value="";
+				nletras=0;
+			}
+			if(nletras!=0){
+				contra=contra.toUpperCase();
+				alert("La primera es: "+contra.charAt(0));
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="password" name="T" size="9" onblur=pasa();>
+</body>
+</html>

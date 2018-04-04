@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos Predefinidos Ejemplo 01 history</title>
+	<script type="text/javascript">
+		function pasa(valor) {
+			window.history.go(valor);
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="Atras" onclick=pasa(-1);><br>
+	<input type="button" value="Adelante" onclick=pasa(1);><br>
+	<a href="ab.htm">Ir a la pagina AB</a>
+</body>
+</html>

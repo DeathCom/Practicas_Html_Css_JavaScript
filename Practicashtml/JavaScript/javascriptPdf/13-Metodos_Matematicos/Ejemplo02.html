@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 02 para Metodos Matematicos</title>
+	<script type="text/javascript">
+		var secreto;
+		function generar() {
+			secreto=Math.random()*10;
+			secreto=Math.round(secreto);
+			if (secreto==0) {
+				secreto=10;
+			}
+		}
+		function juego() {
+			var numero=parseInt(caja.value);
+			if(numero==secreto){
+				alert("Muy Bien.\nA por otro");
+				genera();
+			}else{
+				if(numero<secreto){
+					alert("Es mayor");
+				}else{
+					alert("Es menor");
+				}
+			}
+			caja.focus();
+			caja.value="";
+		}
+	</script>
+</head>
+<body onload=generar();>
+	Numero: <input type="text" name="caja" size="4"><br>
+	<input type="button" value="compara" onclick=juego();>
+</body>
+</html>

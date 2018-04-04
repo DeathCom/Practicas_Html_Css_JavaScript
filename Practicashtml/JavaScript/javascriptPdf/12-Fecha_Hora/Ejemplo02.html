@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 02 para para Fechas y Horas</title>
+	<script type="text/javascript">
+		setTimeout("reloj()",100);
+		function reloj() {
+			var tiempo=new Date();
+			var hora=tiempo.getHours();
+			var minuto=tiempo.getMinutes();
+			var segundo=tiempo.getSeconds();
+			var textoHora=hora+" : "+minuto+" : "+segundo;
+			caja.value=textoHora;
+			setTimeout("reloj()",500);
+		}
+	</script>
+</head>
+<body onload="reloj();">
+	<input type="text" name="caja" size="10">
+</body>
+</html>

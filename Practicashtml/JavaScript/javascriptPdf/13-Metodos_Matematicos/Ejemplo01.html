@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo 01 para Metodos Matematicos</title>
+	<script type="text/javascript">
+		function opera(valor) {
+			var resultado;
+			var num1=parseInt(cnum1.value);
+			var num2=parseInt(cnum2.value);
+
+			switch(valor){
+				case 1:
+					resultado=Math.sqrt(Math.abs(num1));
+					break;
+				case 2: 
+					resultado=Math.pow(num1,num2);
+					break
+				case 3:
+					resultado=Math.max(num1,num2);
+					break;
+			}
+			result.value=resultado;
+		}
+	</script>
+</head>
+<body>
+	numero 1: <input type="text" name="cnum1" size="5" value="0"><br>
+	numero 2: <input type="text" name="cnum2" size="5" value="0"><br><br>
+	<input type="button" value="Raiz" onclick=opera(1)><br>
+	<input type="button" value="Potencia" onclick=opera(2)><br>
+	<input type="button" value="Maximo" onclick=opera(3)><br><br><br>
+	resultado: <input type="text" name="result" size="17">
+</body>
+</html>
